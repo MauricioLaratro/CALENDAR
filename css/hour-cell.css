@@ -1,0 +1,18 @@
+.hourCell{
+    place-self: start end;
+    /* utilizamos place-self que es la suma de align-self y justify-self porque si solo utilizamos justify (ya que por defecto en align ya estamos en start), este elemeno no modificara su tamaño, por lo tanto sera mas grande de lo que es su contenido y en ese caso no serviria el -50% del transform para moverlo hacia arriba. Porque el elemento seria mas alto y por lo tanto se moveria de mas. */
+    transform: translateY(-50%);
+    font: var(--body3-regular);
+    padding-inline-end: 1rem;
+    position: relative;
+}
+
+.hourCell::before{
+    content: '';
+    inline-size: .5rem;
+    block-size: 1px;
+    background: var(--gray20);
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 50%;
+}
