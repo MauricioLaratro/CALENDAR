@@ -13,25 +13,116 @@
 <body>
     <div class="page">
         <header class="header">
-            <select class="select" name="" id="">
-                <option value="" salected>Semana</option>
-                <option value="">Día</option>
-            </select>
-            <button class="button">Button</button>
-            <a class="button" href="#">Button</a>
-            <a class="button is-primary" href="#">Button</a>
-            <a class="button is-secondary" href="#">Button</a>
-            <a class="button is-rounded is-shadowed" href="#">
-                <i class="icon-plus"></i>
-                <span>
-                    Button
-                </span>
-            </a>
-            <a class="button is-compact is-shadowed" href="#">
-                <i class="icon-plus"></i>
-            </a>
+            <div class="header-primary">
+                <div class="header-logo">
+                    <button class="button is-compact">
+                        <i class="icon-hamburguerButton"></i>
+                    </button>
+                    <a href="/" aria-current="page" aria-label="Calendar" tabindex="-1">
+                        <!-- tabindex="-1" para que salga del arbol de accesibilidad, es decir, que no se pueda hacer focus en el presionando tab  -->
+                        <img class="calendarLogo" src="./image/logo.png" alt="Logo del calendario">
+                    </a>
+                </div>
+                <div class="calendarStatus">
+                    <button class="button is-secondary">Hoy</button>
+                    <span class="calendarStatus-navigation">
+                        <a href="#" class="button is-compact" aria-label="Semana anterior">
+                            <i class="icon-chevronLeft" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="button is-compact" aria-label="Siguiente semana">
+                            <i class="icon-chevronRight" aria-hidden="true"></i>
+                        </a>
+                    </span>
+                    <time class="calendarStatus-date" datetime="05-10-2022">05 de Octubre</time>
+                </div>
+            </div>
+            <div class="header-secondary">
+                <select class="select" name="" id="">
+                    <option value="" salected>Semana</option>
+                    <option value="">Día</option>
+                </select>
+                <a href="#user">
+                    <img src="./image/user.png" alt="Foto del usuario">
+                </a>
+            </div>
         </header>
+
         <div class="sidebar">
+            <button class="button is-rounded is-shadowed">
+                <i class="icon-plus" aria-hidden="true"></i>
+                    <span>Crear</span>
+            </button>
+            <div class="miniCalendar" aria-label="Calendario de navegación">
+                <div class="miniCalendar-status">
+                    <time class="miniCalendar-date" datetime="2022-10">
+                        Octubre 2022
+                    </time>
+                    <div class="miniCalendar-navigation">
+                        <a class="button is-compact" href="#prevMonth" aria-label="Mes anterior">
+                            <i class="icon-chevronLeft" aria-hidden="true"></i>
+                         </a>
+                        <a class="button is-compact" href="#nextMonth" aria-label="Siguiente mes">
+                            <i class="icon-chevronRight" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="miniCalendar-header">
+                    <span class="miniCalendar-weekDay">D</span>
+                    <span class="miniCalendar-weekDay">L</span>
+                    <span class="miniCalendar-weekDay">M</span>
+                    <span class="miniCalendar-weekDay">X</span>
+                    <span class="miniCalendar-weekDay">J</span>
+                    <span class="miniCalendar-weekDay">V</span>
+                    <span class="miniCalendar-weekDay">S</span>
+                </div>
+                <div class="miniCalendar-month">
+                    <div class="miniCalendar-monthDay is-inactive">25</div>
+                    <div class="miniCalendar-monthDay is-inactive">26</div>
+                    <div class="miniCalendar-monthDay is-inactive">27</div>
+                    <div class="miniCalendar-monthDay is-inactive">28</div>
+                    <div class="miniCalendar-monthDay is-inactive">29</div>
+                    <div class="miniCalendar-monthDay is-inactive">30</div>
+                    <div class="miniCalendar-monthDay">1</div>
+                    <div class="miniCalendar-monthDay">2</div>
+                    <div class="miniCalendar-monthDay">3</div>
+                    <div class="miniCalendar-monthDay">4</div>
+                    <div class="miniCalendar-monthDay is-selected">5</div>
+                    <div class="miniCalendar-monthDay">6</div>
+                    <div class="miniCalendar-monthDay">7</div>
+                    <div class="miniCalendar-monthDay">8</div>
+                    <div class="miniCalendar-monthDay">9</div>
+                    <div class="miniCalendar-monthDay">10</div>
+                    <div class="miniCalendar-monthDay">11</div>
+                    <div class="miniCalendar-monthDay">12</div>
+                    <div class="miniCalendar-monthDay">13</div>
+                    <div class="miniCalendar-monthDay">14</div>
+                    <div class="miniCalendar-monthDay">15</div>
+                    <div class="miniCalendar-monthDay">16</div>
+                    <div class="miniCalendar-monthDay">17</div>
+                    <div class="miniCalendar-monthDay">18</div>
+                    <div class="miniCalendar-monthDay">19</div>
+                    <div class="miniCalendar-monthDay">20</div>
+                    <div class="miniCalendar-monthDay">21</div>
+                    <div class="miniCalendar-monthDay">22</div>
+                    <div class="miniCalendar-monthDay">23</div>
+                    <div class="miniCalendar-monthDay">24</div>
+                    <div class="miniCalendar-monthDay">25</div>
+                    <div class="miniCalendar-monthDay">26</div>
+                    <div class="miniCalendar-monthDay">27</div>
+                    <div class="miniCalendar-monthDay">28</div>
+                    <div class="miniCalendar-monthDay">29</div>
+                    <div class="miniCalendar-monthDay">30</div>
+                    <div class="miniCalendar-monthDay">31</div>
+                    <div class="miniCalendar-monthDay is-inactive">1</div>
+                    <div class="miniCalendar-monthDay is-inactive">2</div>
+                    <div class="miniCalendar-monthDay is-inactive">3</div>
+                    <div class="miniCalendar-monthDay is-inactive">4</div>
+                    <div class="miniCalendar-monthDay is-inactive">5</div>
+                </div>
+
+                <!-- FALTA HACER EL IMPUT DE BUSCAR PERSONAS Y EL APARTADO DE MIS CALENDARIOS, QUEDO COMO TAREA, ADEMAS DE HACER EL LAYOUT DE DIAS -->
+
+            </div>
 
         </div>
         <main class="calendar">
@@ -39,17 +130,9 @@
             <div class="calendar-week">
                 <div class="timezoneCell">GMT-3</div>
                 <h2 class="calendarDay">
-                    <a href="./calendar-by-day.html" aria-label="Sabado 01 de Octubre">
-                        <!-- dentro de este "a" debo hacer el html del dia como esta en figma -->
-                        <time datetime="01-10-2022">
-                            <span>SAB</span> <br>
-                            <span>1</span>
-                        </time>
-                    </a>
-                </h2>
-                <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-label="Domingo 02 de Octubre">
-                        <time datetime="02-10-2022">
+                        <!-- dentro de este "a" debo hacer el html del dia como esta en figma -->
+                        <time datetime="2022-10-02">
                             <span>DOM</span> <br>
                             <span>2</span>
                         </time>
@@ -57,7 +140,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-label="Lunes 03 de Octubre">
-                        <time datetime="03-10-2022">
+                        <time datetime="2022-10-03">
                             <span>LUN</span> <br>
                             <span>3</span>
                         </time>
@@ -65,7 +148,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-label="Martes 04 de Octubre">
-                        <time datetime="04-10-2022">
+                        <time datetime="2022-10-04">
                             <span>MAR</span> <br>
                             <span>4</span>
                         </time>
@@ -73,7 +156,7 @@
                 </h2>
                 <h2 class="calendarDay is-selected">
                     <a href="./calendar-by-day.html" aria-label="Miercoles 05 de Octubre">
-                        <time datetime="05-10-2022">
+                        <time datetime="2022-10-05">
                             <span>MIE</span> <br>
                             <span>5</span>
                         </time>
@@ -81,7 +164,7 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-label="Jueves 06 de Octubre">
-                        <time datetime="06-10-2022">
+                        <time datetime="2022-10-06">
                             <span>JUE</span> <br>
                             <span>6</span>
                         </time>
@@ -89,12 +172,21 @@
                 </h2>
                 <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-label="Viernes 07 de Octubre">
-                        <time datetime="07-10-2022">
+                        <time datetime="2022-10-07">
                             <span>VIE</span> <br>
                             <span>7</span>
                         </time>
                     </a>
                 </h2>
+                <h2 class="calendarDay">
+                    <a href="./calendar-by-day.html" aria-label="Sabado 08 de Octubre">
+                        <time datetime="2022-10-08">
+                            <span>SAB</span> <br>
+                            <span>8</span>
+                        </time>
+                    </a>
+                </h2>
+
                 <span class="hourCell"></span>
                 <div class="taskCell">
                     <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, hacer ejercicio">

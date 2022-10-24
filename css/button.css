@@ -52,6 +52,7 @@
     background: var(--white);
     border-radius: 1.25rem;
     color: var(--blue10);
+    
 }
 
 .button.is-compact{

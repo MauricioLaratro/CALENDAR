@@ -37,10 +37,10 @@
   .icon-chevronDown:before {
     content: "\e903";
   }
-  .iconchevronLeft:before {
+  .icon-chevronLeft:before {
     content: "\e904";
   }
-  .iconchevronRight:before {
+  .icon-chevronRight:before {
     content: "\e905";
   }
   .icon-chevronUp:before {

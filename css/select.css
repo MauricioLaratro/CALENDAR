@@ -10,5 +10,5 @@
     /* appearance: none; sirve para quitar los comportamientos por defecto que traigan los elementos */
     background-image: url("../icons/Icon=chevron-down.svg");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right .5rem center;
 }

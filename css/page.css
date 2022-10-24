@@ -7,12 +7,11 @@
 }
 
 .page .header{
-    border: 5px solid blue;
     grid-area: header;
+    border-block-end: 1px solid var(--gray10);
 }
 
 .page .sidebar{
-    border: 5px solid yellow;
     grid-area: sidebar;
 }
 
