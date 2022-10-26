@@ -5,6 +5,8 @@
     position: absolute;
     inset-block-start: 200px;
     inset-inline-start: 200px;
+    padding-inline: 3rem;
+    padding-block: 1.5rem;
     max-inline-size: 28rem;
     inline-size: 100%;
     border-radius: .25rem;
