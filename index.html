@@ -650,7 +650,41 @@
     </div>
     <dialog class="modal">
         <form>
-            adsad
+            <div class="input">
+                <input required name="title" type="text" placeholder="Anade un título">
+            </div>
+            <div class="input">
+                <input type="date" name="date" required>
+            </div>
+            <div class="input">
+                <input type="time" name="time-start" required>
+            </div>
+            <div class="input">
+                <input type="time" name="time-end" required>
+            </div>
+
+            <div class="input">
+                <input type="text" list="guests" name="guests" placeholder="Agregar Invitados" required>
+                <datalist id="guests">
+                    <option value="Leonidas"></option>
+                    <option value="Carlos"></option>
+                    <option value="Miguel"></option>
+                    <option value="Sandra"></option>
+                    <option value="Cristopher"></option>
+                </datalist>
+            </div>
+            <!-- Esta tecnica sirve para filtrar elementos que ya tenemos, como por ejemplo prellenar datos, como en este caso que apareceran estos nombres como opciones dentro del imput. Lo que hicimos fue darle al input un name y mas importante un list, con el cual posteriormente enlazamos el datalist poniendole el mismo valor a su id, en este caso "guests" luego en la etiqueta option colocamos las opciones que queremos que nos brinde el input. -->
+
+            <div class="input">
+                <input type="text" name="location" placeholder="Agregar Ubicación">
+            </div>
+            <div class="input">
+                <input type="file" multiple>
+            </div>
+            <div class="input">
+                <textarea name="description" id="" placeholder="Agregar Descripción" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit">
         </form>
         <div class="modal-actions">
             <button class="button">
