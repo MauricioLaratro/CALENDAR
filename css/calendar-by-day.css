@@ -1,0 +1,41 @@
+.dayGrid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 2.5rem repeat(24, minmax(var(--minBlockSize-day), var(--maxBlockSize-day)));
+    padding-block-start: 1.5rem;
+    min-block-size: 700px;
+}
+
+
+.dayGrid .calendarDay{
+    justify-self: flex-start;
+    align-self: center;
+    border: none;
+    position: static;
+}
+
+
+.dayGrid .calendarDay::before{
+    content: '';
+    inline-size: 0px;
+    block-size: 0rem;
+    background: none;
+    position: static;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+}
+
+
+.dayGrid .timezoneCell{
+    position: static;
+}
+
+.dayGrid .timezoneCell::before{
+    content: '';
+    inline-size: 0;
+    block-size: 0;
+    background: none;
+    position: static;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+}

@@ -24,4 +24,16 @@
 body{
     font: var(--body1-regular);
     margin: 0;
+    color: var(--gray50);
+    background: var(--white);
 }
+
+@media (prefers-color-shceme: dark){
+    :root{
+        --gray50: #fffffe;
+        --gray20: #c1c1c1;
+        --white: #222222;
+    }
+}
+
+/* Lo que hacemos con este selector es aplicar un media query al modo oscuro, para los que usan este modo como determinado. Simplemente cambiamos las variables que teniamos aplicadas en el body, para que el background sea oscuro y ademas cambiamos variables necesarias para que los elementos tengan un contraste y se vean correctamente. */

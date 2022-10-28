@@ -14,6 +14,9 @@
     --minInlineSize: 5rem;
     --maxInlineSize: 1fr;
     position: relative;
+
+    --minBlockSize-day: 2.5rem;
+    --maxBlockSize-day: 3.5rem;
 }
 
 .calendar-week{
@@ -21,5 +24,4 @@
     grid-template-columns: auto repeat(7, minmax(var(--minInlineSize), var(--maxInlineSize)));
     grid-template-rows: 7rem repeat(24, minmax(var(--minBlockSize), var(--maxBlockSize)));
     min-block-size: 700px;
-
 }
