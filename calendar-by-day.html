@@ -38,8 +38,8 @@
             </div>
             <div class="header-secondary">
                 <select class="select" name="" id="">
-                    <option value="" salected>Semana</option>
-                    <option value="">Día</option>
+                    <option value="">Semana</option>
+                    <option value="" selected>Día</option>
                 </select>
                 <a href="#user">
                     <img src="./image/user.png" alt="Foto del usuario">
@@ -119,22 +119,17 @@
                     <div class="miniCalendar-monthDay is-inactive">4</div>
                     <div class="miniCalendar-monthDay is-inactive">5</div>
                 </div>
-
-                <!-- FALTA HACER EL IMPUT DE BUSCAR PERSONAS Y EL APARTADO DE MIS CALENDARIOS, QUEDO COMO TAREA, ADEMAS DE HACER EL LAYOUT DE DIAS -->
-
             </div>
 
         </div>
         <main class="calendar">
             <div class="dayGrid">
-
                 <div class="timezoneCell"></div>
                 <h2 class="calendarDay is-selected">
-                    <a href="./calendar-by-day.html" aria-label="Domingo 02 de Octubre">
-                        <!-- dentro de este "a" debo hacer el html del dia como esta en figma -->
-                        <time datetime="2022-10-02">
-                            <span>DOM</span> <br>
-                            <span>2</span>
+                    <a href="./calendar-by-day.html" aria-label="Miercoles 05 de Octubre">
+                        <time datetime="2022-10-05">
+                            <span>MIE</span> <br>
+                            <span>5</span>
                         </time>
                     </a>
                 </h2>
@@ -143,15 +138,10 @@
                 <div class="taskCell"></div>
 
                 
+                <span class="hourCell">1AM</span>
+                <div class="taskCell"></div>
                 <span class="hourCell">2AM</span>
-                <div class="taskCell">
-                    <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, hacer ejercicio">
-                        <p>Hacer ejercicio</p>
-                        <p>
-                            <time datetime="17:00">5</time> - <time datetime="18:00">6 pm</time>
-                        </p>
-                    </div>
-                </div>
+                <div class="taskCell"></div>
                 <span class="hourCell">3AM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">4AM</span>
@@ -181,17 +171,38 @@
                 <span class="hourCell">4PM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">5PM</span>
-                <div class="taskCell"></div>
+                <div class="taskCell">
+                    <div tabindex="0" class="task" aria-label="de 17:00 a 18:00, hacer ejercicio">
+                        <p>Hacer ejercicio</p>
+                        <p>
+                            <time datetime="17:00">5</time> - <time datetime="18:00">6 pm</time>
+                        </p>
+                    </div>
+                </div>
                 <span class="hourCell">6PM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">7PM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">8PM</span>
-                <div class="taskCell"></div>
+                <div class="taskCell">
+                    <div tabindex="0" class="task is-future" aria-label="de 20:00 a 21:00, Team Daily">
+                        <p>Team daily</p>
+                        <p>
+                            <time datetime="20:00">8</time> - <time datetime="21:00">9 pm</time>
+                        </p>
+                    </div>
+                </div>
                 <span class="hourCell">9PM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">10PM</span>
-                <div class="taskCell"></div>
+                <div class="taskCell">
+                    <div tabindex="0" class="task is-future" aria-label="22:00, Tomar medicamento">
+                        <p>Tomar medicamento</p>
+                        <p>
+                            <time datetime="22:00">22 pm</time>
+                        </p>
+                    </div>
+                </div>
                 <span class="hourCell">11PM</span>
                 <div class="taskCell"></div>
                 <span class="hourCell">12PM</span>

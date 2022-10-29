@@ -39,3 +39,23 @@
     inset-inline-end: 0;
     inset-block-end: 0;
 }
+
+
+.dayGrid .task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .25rem;
+    background: var(--blue10);
+    color: var(--white);
+    border-radius: .25rem;
+    padding-inline: .625rem;
+    padding-block: 1rem;
+    overflow: hidden;
+    font: var(--body2-medium);
+}
+
+
+.task.is-future{
+    background: var(--blue20);
+}
