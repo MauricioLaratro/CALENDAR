@@ -28,7 +28,7 @@ body{
     background: var(--white);
 }
 
-@media (prefers-color-shceme: dark){
+@media (prefers-color-scheme: dark){
     :root{
         --gray50: #fffffe;
         --gray20: #c1c1c1;
